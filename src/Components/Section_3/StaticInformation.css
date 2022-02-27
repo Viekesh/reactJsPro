@@ -1,0 +1,89 @@
+.static_information {
+  width: 22%;
+  height: 100%;
+}
+
+/* Switch Address Start */
+.switch_address {
+  width: 100%;
+  height: 9%;
+  justify-content: space-around;
+}
+
+.chain_switch {
+  border: 2px solid #ffffff;
+  border-radius: 0.6vw;
+  width: 40%;
+  height: 60%;
+  color: #ffffff;
+  font-size: 0.9vw;
+  background-color: #191b20;
+  justify-content: space-around;
+}
+
+.contract_address {
+  border: 2px solid #3772ff;
+  border-radius: 0.6vw;
+  width: 48%;
+  height: 60%;
+  background-color: transparent;
+  justify-content: space-around;
+}
+/* Switch Address End */
+
+/* Custom Link Start */
+.custom_link {
+  width: 100%;
+  height: 15%;
+  margin: 1vw 0;
+  padding: 1.3vw 1vw;
+}
+
+.link_add {
+  margin: 1vw 0;
+}
+
+.link_add > a {
+  font-size: 1vw;
+  font-weight: lighter;
+}
+/* Custom Link End */
+
+/* Search Bar Start */
+.search_bar {
+  width: 100%;
+  height: 9%;
+}
+
+.search_bar > input {
+  border: none;
+  outline: none;
+  border-radius: 0.9vw;
+  width: 94%;
+  height: 100%;
+  padding: 0 0.9vw;
+  font-size: 1vw;
+  color: #191b20;
+  background-color: #242731;
+}
+/* Search Bar End */
+
+.custom_link_btn {
+  justify-content: space-between;
+}
+.cancel_btn {
+  border: 1px solid #454850;
+  border-radius: 0.6vw;
+  width: 9vw;
+  height: 2.3vw;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.cancel_btn > ion-icon {
+  color: snow;
+  background-color: none;
+}

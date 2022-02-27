@@ -1,0 +1,268 @@
+.user_information {
+  border-left: 1px solid #353945;
+  border-right: 1px solid #353945;
+  width: 60%;
+  height: 100%;
+}
+
+/* Top Portion Start */
+.top_portion {
+  width: 96%;
+  height: 8%;
+  margin: 0.3rem auto;
+  padding: 0 0.6vw;
+  justify-content: space-between;
+}
+
+.top_portion h4 {
+  border-bottom: 2px solid #3772ff;
+  color: snow;
+}
+
+.balance {
+  border-radius: 0.6vw;
+  width: 18%;
+  height: 70%;
+  background-color: #191b20;
+  justify-content: center;
+}
+
+.balance p {
+  font-size: 0.7rem;
+  margin: 0 0.3rem;
+}
+
+.stroke_icon {
+  border: 1px solid #3772ff;
+  border-top-left-radius: 0.3vw;
+  border-bottom-left-radius: 0.3vw;
+  border-top-right-radius: 0.5vw;
+  border-bottom-right-radius: 0.5vw;
+  width: 18%;
+  height: 50%;
+  justify-content: right;
+}
+
+.stroke_child {
+  border: 1px solid #3772ff;
+  border-top-left-radius: 0.3vw;
+  border-bottom-left-radius: 0.3vw;
+  width: 50%;
+  height: 50%;
+}
+
+.stroke_dot {
+  border: 1px solid #3772ff;
+  width: 30%;
+  height: 30%;
+}
+/* Top Portion End */
+
+/* Promo Panel Start */
+.promo_panel {
+  border-radius: 1vw;
+  width: 96%;
+  height: 12%;
+  margin: 1rem auto;
+  padding: 0.3vw 1vw;
+  background-color: #abe8ff;
+  justify-content: space-between;
+}
+
+.promo_panel .close_icon {
+  border-radius: 50%;
+  font-size: 1.6vw;
+  background-color: snow;
+  position: absolute;
+  right: 23vw;
+  top: 6vw;
+}
+
+.promo_panel .close_icon > ion-icon {
+  border-radius: 50%;
+  font-size: 1.6vw;
+  background-color: snow;
+}
+
+.promo_text {
+  width: 80%;
+  height: 90%;
+}
+
+.promo_text p {
+  color: #000000;
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+.promo_text .tut_btn {
+  border: none;
+  outline: none;
+  border-radius: 0.6vw;
+  width: 6rem;
+  height: 1.6rem;
+  background-color: #ffffff;
+}
+
+.promo_panel > img {
+  width: 7vw;
+  height: 6vw;
+  margin: 0 1vw -0.6vw 0;
+}
+/* Promo Panel End */
+
+/* Rewards Data Start */
+.rewards_data {
+  border-radius: 1vw;
+  width: 96%;
+  height: 21%;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  background-color: #191b20;
+  justify-content: space-between;
+}
+
+.rewards_values p {
+  border-radius: 0.6vw;
+  width: 6vw;
+  height: 1.6vw;
+  font-size: 0.7rem;
+  margin: 0.3rem 1rem 0 0;
+  background-color: #353945;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom_link_btn .link_btn {
+  border: none;
+  outline: none;
+  border-radius: 0.6vw;
+  width: 9rem;
+  height: 2rem;
+  background-color: #3772ff;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-content: space-around;
+}
+/* Rewards Data End */
+
+/* Referral Links Start */
+.referral_links {
+  border-radius: 1vw;
+  width: 96%;
+  height: 24%;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+
+.referral_link_data {
+  border-radius: 0.6vw;
+  width: 46%;
+  height: 98%;
+  padding: 0.3rem 1rem;
+  background-color: #191b20;
+}
+
+.referral_link_data img {
+  width: 3vw;
+  height: 3vw;
+}
+
+.referral_link_data p {
+  font-size: 1vw;
+  color: #808191;
+  margin: 0.6rem 0;
+}
+
+.referral_link_data a {
+  border-radius: 0.6vw;
+  padding: 0.3vw;
+  font-size: 0.9vw;
+  background-color: #242731;
+}
+
+.referral_link_data a span > img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.cus_link {
+  justify-content: space-around;
+}
+/* Referral Links End */
+
+/* User Data Start */
+.user_data {
+  border-radius: 1vw;
+  width: 96%;
+  height: 24%;
+  margin: 0rem auto;
+  justify-content: space-between;
+}
+
+.tab_btn_1 {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #3772ff;
+  margin: 0.3vw 0.6vw;
+  font-size: 1vw;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.tab_btn_2 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #353945;
+  font-size: 1vw;
+}
+
+.table_1 {
+  border-radius: 0.6vw;
+  border-collapse: collapse;
+  width: 100%;
+  height: 30%;
+  margin: 0.3rem auto;
+  background-color: #191b20;
+  color: #808191;
+  font-size: 0.9vw;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.table_2 {
+  border-radius: 0.6vw;
+  border-collapse: collapse;
+  width: 100%;
+  height: 30%;
+  margin: 0.3rem auto;
+  font-size: 0.9vw;
+  background-color: #242731;
+  table-layout: fixed;
+  text-align: center;
+}
+
+td {
+  color: #ffffff;
+  overflow: hidden;
+}
+
+td img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.asset_data img {
+  width: 1vw;
+  height: 1vw;
+  margin-left: 1vw;
+}
+
+.asset_data p {
+  color: #808191;
+}
+/* User Data End */
