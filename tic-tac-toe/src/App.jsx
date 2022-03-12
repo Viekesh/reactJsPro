@@ -32,22 +32,20 @@ const App = () => {
       return;
     }
 
+
     setHistory(prev => {
       const last = prev[prev.length - 1];
-
       const newBoard = last.board.map((square, pos) => {
         if (pos === position) {
           return last.isXNext ? 'X' : 'O';
         }
-
         return square;
       });
-
       return prev.concat({ board: newBoard, isXNext: !last.isXNext });
     });
-
     setCurrentMove(prev => prev + 1);
   };
+
 
   const onNewGame = () => {
     setHistory(NEW_GAME);
