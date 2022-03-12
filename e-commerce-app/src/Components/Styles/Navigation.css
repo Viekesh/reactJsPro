@@ -1,0 +1,109 @@
+.navigation {
+  max-width: 100vw;
+  height: 9vh;
+  background-color: crimson;
+  justify-content: space-around;
+}
+
+.logo h1 {
+  color: snow;
+}
+
+.nav_buttons {
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search {
+  width: 60%;
+  height: 70%;
+  justify-content: center;
+}
+
+.search_bar {
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 0.6vw;
+  border-top-left-radius: 0.6vw;
+  padding-left: 0.6vw;
+  width: 100%;
+  height: 90%;
+  font-family: "Josefin Slab";
+  font-weight: 900;
+  font-size: 1.3vw;
+}
+
+.menu_button {
+  border-radius: 0.6vw;
+  padding: 0.3vw 0.6vw;
+  background-color: snow;
+  font-family: sans-serif;
+  font-weight: 750;
+  font-size: 0.8vw;
+}
+
+.search_button {
+  border-left: 2px solid crimson;
+  border-top-right-radius: 0.6vw;
+  border-bottom-right-radius: 0.6vw;
+  width: 12%;
+  height: 90%;
+  background-color: snow;
+}
+
+.cart_icon {
+  /* margin-top: 30%; */
+  color: snow;
+}
+
+.side_menu {
+  border-top-left-radius: 0.6vw;
+  border-bottom-left-radius: 0.6vw;
+  width: 18vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: -18vw;
+
+  display: flex;
+  align-items: center;
+
+  background-color: black;
+  transition: 0.3s;
+  box-shadow: 0 15px 60px 30px rgba(1, 10, 136, 0.37);
+}
+
+.navigation_links {
+  width: 100%;
+  height: 80%;
+}
+
+#click {
+  display: none;
+}
+
+.close_button {
+  position: absolute;
+  top: 1.3vw;
+  right: 2vw;
+}
+
+.link {
+  border: 2px solid black;
+  border-radius: 0.9vw;
+  margin: 6% auto;
+  width: 90%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  font-family: "Poppins";
+}
+
+.link a {
+  margin-left: 1vw;
+  color: snow;
+  font-size: 1vw;
+}
