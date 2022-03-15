@@ -1,0 +1,48 @@
+.product {
+  min-width: 30%;
+  width: 100%;
+  height: 70vh;
+  margin: 9px;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.info {
+  margin-bottom: 15px;
+  line-height: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+}
+
+.product > img {
+  max-width: 100vw;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product > button {
+  border-radius: 0.6vw;
+  width: 9vw;
+  padding: 0.5vw 1vw;
+  font-size: 1vw;
+  color: snow;
+  background-color: rgb(30, 30, 30);
+  cursor: pointer;
+}
+
+.title {
+  color: black;
+  font-size: 1vw;
+  font-weight: 600;
+  text-decoration: none;
+}
