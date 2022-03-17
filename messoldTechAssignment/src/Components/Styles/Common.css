@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 0.3vw;
+  background-color: rgb(30, 30, 30);
+  padding: 0.3vw 0.6vw;
+  color: snow;
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+}
+
+.absolute_center {
+  align-items: center;
+  justify-content: center;
+}

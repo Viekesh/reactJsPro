@@ -7,6 +7,7 @@ import '../Components/Styles/CommonStyles.css';
 import { products } from './SubComponents/ProductData';
 import Product from './SubComponents/Product';
 import '../Components/Styles/LandingPage.css';
+import BackToTop from './SubComponents/BackToTop';
 
 
 const LandingPage = () => {
@@ -59,6 +60,7 @@ const LandingPage = () => {
                         />
                     ))}
                 </section>
+                <BackToTop />
             </main>
         </div>
     )

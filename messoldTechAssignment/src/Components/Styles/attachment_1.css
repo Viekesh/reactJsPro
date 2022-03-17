@@ -1,0 +1,84 @@
+.attachment_1 {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.elements {
+  width: 90%;
+  height: 90%;
+}
+
+.a_1 {
+  top: 0.3vw;
+  left: 1vw;
+}
+
+.a_2 {
+  top: 0.3vw;
+  left: 9vw;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.box_1 {
+  width: 100%;
+}
+
+.box_2 {
+  width: 100%;
+}
+
+.box_3 {
+  width: 100%;
+}
+
+.h_a_1 {
+  margin: 1vw 1vw;
+}
+
+.para_a_1 {
+  margin: 2vw 1vw 4vw 1vw;
+}
+
+.scale {
+  width: 80%;
+  padding: 0 1vw;
+}
+
+.dot {
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+.common_dots {
+  border: 4px solid black;
+  border-radius: 4px;
+}
+
+.dot_3 {
+  border: 9px solid rgb(178, 184, 122);
+  border-radius: 50%;
+}
+
+.line {
+  border: 1px solid black;
+  width: 100%;
+  height: 0;
+}
+
+.values {
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h5 {
+  margin: 3px 0;
+}
+
+li {
+  margin: 0.6vw 0;
+}

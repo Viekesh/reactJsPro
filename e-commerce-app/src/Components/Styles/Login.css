@@ -1,0 +1,96 @@
+.login {
+  max-width: 100vw;
+  height: 100vh;
+  background-color: rgb(30, 30, 30);
+}
+
+.login_container {
+  border: 2px solid blue;
+  width: 24%;
+  height: 70vh;
+  margin: 6vw 0 0 15vw;
+  padding: 1vw 2vw;
+  flex-direction: column;
+  justify-content: center;
+
+  backdrop-filter: blur(17px) saturate(200%);
+  -webkit-backdrop-filter: blur(17px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.29);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+
+  z-index: 9;
+}
+
+.signin_heading {
+  margin: 1vw 0;
+  color: snow;
+  font-size: 2vw;
+  overflow: hidden;
+}
+
+.signin_subheading {
+  color: snow;
+  margin: 0.9vw 0;
+  overflow: hidden;
+}
+
+.form_elements {
+  width: 100%;
+  height: 5vh;
+  padding: 0 0.6vw;
+  font-size: 1vw;
+}
+
+.login_signin {
+  border-radius: 0.6vw;
+  margin: 2vw 0;
+  padding: 0.6vw 1vw;
+  font-size: 0.9vw;
+  color: snow;
+  background-color: crimson;
+  overflow: hidden;
+}
+
+.signin_description {
+  line-height: 1.3vw;
+  font-size: 1vw;
+  font-weight: lighter;
+  color: snow;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.bubble {
+  position: fixed;
+}
+
+.bubble_1 {
+  bottom: 3vw;
+  left: 5vw;
+  border-radius: 9vw;
+  width: 18vw;
+  height: 18vw;
+  background-color: crimson;
+  box-shadow: 0 9px 30px 3px rgba(90, 90, 90, 0.3);
+}
+
+.bubble_2 {
+  bottom: -3vw;
+  right: -5vw;
+  border-radius: 11vw;
+  width: 21vw;
+  height: 21vw;
+  background-color: crimson;
+  box-shadow: 0 9px 30px 3px rgba(90, 90, 90, 0.3);
+}
+
+.bubble_3 {
+  top: -3vw;
+  right: 5vw;
+  border-radius: 11vw;
+  width: 21vw;
+  height: 21vw;
+  background-color: crimson;
+  box-shadow: 0 9px 30px 3px rgba(90, 90, 90, 0.3);
+}
