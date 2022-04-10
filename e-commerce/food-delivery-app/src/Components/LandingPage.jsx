@@ -5,6 +5,9 @@ import MenuContainer from './SubComponents/MenuContainer';
 import './Styles/LandingPage.css';
 import { AccountBalanceWalletRounded, Chat, Favorite, HomeRounded, Settings, SummarizeRounded } from '@mui/icons-material';
 import deliveryMan2 from '../Images/delivery-boy2.png';
+import SubMenuContainer from './SubComponents/SubMenuContainer';
+import MenuCard from './SubComponents/MenuCard';
+import { MenuItems, Items } from './SubComponents/Data';
 
 const LandingPage = () => {
 
@@ -25,13 +28,43 @@ const LandingPage = () => {
             // So for according to that we need to move this indicator 
         }
 
-        menuLi.forEach(n => n.addEventListener('click', setMenuActive))
-    })
+        menuLi.forEach(n => n.addEventListener('click', setMenuActive));
+
+
+        // Now what we need to do is just like onclick on this menu card we need to do a same
+        // thing for our active class because when we click this it should be remove that
+        // "isActive"
+        // So what we need to do just like the same thing see below....
+        // Menu Card Active Toggle
+
+        const menuCards = document.querySelector('.rowContainer').querySelectorAll('.rowMenuCard');
+
+        function setMenuCardActive() {
+            menuCards.forEach((n) => n.classList.remove("active"));
+            this.classList.add("active");
+        }
+
+        menuCards.forEach(n => n.addEventListener('click', setMenuCardActive))
+
+        // Whenever you are toggling it, it should be change that active thing
+        // So first thing you need to bring up all the cards into it
+        // Inside ".rowContainer"  we having from "MenuCard.jsx"
+        // We write document.querySelector ".rowContainer" inside this we having multiple
+        // rowMenuCard from menuCard component.
+        // We will select every row menu card (.querySelectorAll) and save it in our
+        // Then forEach menu card (we are form the nth element) we are adding the listener event
+        // as the click event then we calling a function, then function is going to be set menu
+        // card active (setMenuCardActive) (we creating a function as a reference) then we create a function over
+        // here then create a function "setMenuCardActive".
+        // Then we need to do inside "setMenuCardActive" function 
+
+    }, []);
 
     // These useEffect hook will help you to write the custom javascript elements that it will be rendered once whenever your page is rendered.
     // This takes two parameters one is the function and another one is the dependancies so that you can pass any states or dependancies what you need you can over there so whenever the state is updated this useeffect will be rerendered
     // So currentyly we are not pass any state or dependancy inside it, all we have to do is we are going to get the complete the li tag which is inside the menu.
-    // At the time we use this created this id by using that we are going to get that element 
+    // At the time we use this created this id by using that we are going to get that element.
+
     return (
         <div className='landing_page'>
             <header>
@@ -47,10 +80,27 @@ const LandingPage = () => {
 
                         </div>
 
-                        <div className="menuContainer">
+                        <div className="dishContainer">
 
-                            <div className="menuCard"></div>
-                            <div className="rowContainer"></div>
+                            <div className="menuCard">
+                                <SubMenuContainer name={'Menu Category'} />
+                            </div>
+
+                            <div className="rowContainer">
+
+                                {
+                                    MenuItems && MenuItems.map(data => (
+
+                                        <div key={data.id}>
+                                            <MenuCard imgSrc={data.imgSrc} name={data.name} isActive={data.id === 1 ? true : false} />
+                                        </div>
+
+                                    ))
+                                }
+
+
+                            </div>
+
                             <div className="dishitemContainer"></div>
 
                         </div>
