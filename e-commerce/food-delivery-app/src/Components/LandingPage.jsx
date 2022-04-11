@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './SubComponents/Header';
 import BannerName from './SubComponents/BannerName';
 import MenuContainer from './SubComponents/MenuContainer';
@@ -8,8 +8,16 @@ import deliveryMan2 from '../Images/delivery-boy2.png';
 import SubMenuContainer from './SubComponents/SubMenuContainer';
 import MenuCard from './SubComponents/MenuCard';
 import { MenuItems, Items } from './SubComponents/Data';
+import ItemCard from './SubComponents/ItemCard';
+
+
 
 const LandingPage = () => {
+
+    // Main Dish State
+    const [isMainData, setMainData] = useState(
+        Items.filter((element) => element.itemId === "buger01")
+    )
 
     useEffect(() => {
         const menuLi = document.querySelectorAll("#menu li");
@@ -101,7 +109,23 @@ const LandingPage = () => {
 
                             </div>
 
-                            <div className="dishitemContainer"></div>
+                            <div className="dishItemContainer">
+
+                                {
+                                    isMainData && isMainData.map(data => (
+
+                                        <ItemCard
+                                            key={data.id}
+                                            itemId={data.id}
+                                            imgSrc={data.imgSrc}
+                                            name={data.name}
+                                            rating={data.ratings}
+                                            price={data.price} />
+
+                                    ))
+                                }
+
+                            </div>
 
                         </div>
 
