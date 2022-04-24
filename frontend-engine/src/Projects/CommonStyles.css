@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    outline: none;
+}
+
+.x-axis-center {
+    display: flex;
+    align-items: center;
+}
+
+.x-y-axis-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
