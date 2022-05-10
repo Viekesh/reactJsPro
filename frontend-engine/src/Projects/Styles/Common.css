@@ -8,12 +8,17 @@ a {
     text-decoration: none;
 }
 
-button{
+button {
     border: none;
     outline: none;
 }
 
-.x-axis-center {
+input {
+    border: none;
+    outline: none;
+}
+
+.y-axis-center {
     display: flex;
     align-items: center;
 }

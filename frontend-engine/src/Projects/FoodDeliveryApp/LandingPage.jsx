@@ -1,11 +1,12 @@
 import React from 'react';
-import MainPage from './AlgoTrading/MainPage';
-import './CommonStyles.css';
+import './LandingPage.css';
+import '../Styles/Common.css';
+import Header from './Components/Navigation/Header';
 
 const LandingPage = () => {
     return (
         <div className='landing-page'>
-            <MainPage />
+            <Header />
         </div>
     )
 }
