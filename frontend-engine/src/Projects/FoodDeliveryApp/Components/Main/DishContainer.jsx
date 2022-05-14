@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './DishContainer.css';
 import DishMenus from './DishMenus';
 import RowMenuCard from './RowMenuCard';
-import { MenuItems } from '../Data/Data';
+import { MenuItems, Items } from '../Data/Data';
+import SubMenuItems from './SubMenuItems';
 
 const DishContainer = () => {
+
+    const [isMainData, setMainData] = useState(
+        Items.filter((element) => element.itemId === "buger01")
+    );
 
     useEffect(() => {
 
@@ -33,8 +38,19 @@ const DishContainer = () => {
                 }
             </div>
 
-            <div className="dish-item-container">
-
+            <div className="dish-item-container y-axis-center">
+                {
+                    isMainData && isMainData.map(data => (
+                        <SubMenuItems
+                            key={data.id}
+                            itemId={data.id}
+                            imgSrc={data.imgSrc}
+                            name={data.name}
+                            rating={data.ratings}
+                            price={data.price}
+                        />
+                    ))
+                }
             </div>
         </div>
     )
