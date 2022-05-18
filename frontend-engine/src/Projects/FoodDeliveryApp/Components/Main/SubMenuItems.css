@@ -71,6 +71,18 @@
     font-size: 18px;
 }
 
+.item-content .bottom .rating .MuiSvgIcon-root {
+    font-size: 14px;
+}
+
+.red {
+    color: red !important;
+}
+
+.gray {
+    color: #373848 !important;
+}
+
 .item-content .bottom .price {
     font-size: 18px;
 }

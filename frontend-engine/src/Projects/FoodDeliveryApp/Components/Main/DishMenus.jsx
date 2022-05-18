@@ -1,10 +1,10 @@
 import { ChevronRightRounded } from '@mui/icons-material';
 import React from 'react'
 
-const DishMenus = () => {
+const DishMenus = ({ name }) => {
     return (
         <div className="submenu-container y-axis-center">
-            <h3>Menu Category</h3>
+            <h3>{name}</h3>
             <div className="view-all y-axis-center">
                 <p className='y-axis-center'>View All <span className='y-axis-center'><ChevronRightRounded /></span></p>
             </div>

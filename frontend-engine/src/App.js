@@ -1,10 +1,10 @@
 import React from 'react';
-import FDRoutes from './Projects/FoodDeliveryApp/FDRoutes';
+import LandingPage from './Projects/Portfolio/LandingPage.jsx';
 
 const App = () => {
   return (
     <div className='app'>
-      <FDRoutes />
+      <LandingPage />
     </div>
   )
 }
