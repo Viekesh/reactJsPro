@@ -1,0 +1,90 @@
+header {
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* CTA */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* Header Socials */
+
+.header_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: fixed;
+    left: 12rem;
+    bottom: 3rem;
+    z-index: 1;
+}
+
+.header_social::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.me {
+    border: 2px solid snow;
+    background: url(../../Assets/4k-dark-blue-lines-grid-lines.jpg) center no-repeat;
+    opacity: 0.6;
+    width: 21vw;
+    height: 21vw;
+    margin: 1rem auto;
+    border-radius: 100%;
+}
+
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* For Mobile And Tablets */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 90vh;
+        padding-top: 4rem;
+    }
+
+    .me {
+        margin: 3rem auto;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .header_social {
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .scroll_down {
+        display: none;
+    }
+
+    .me {
+        border: 2px solid snow;
+        width: 60vw;
+        height: 60vw;
+    }
+}
