@@ -1,10 +1,10 @@
 import React from 'react';
-import LandingPage from './Projects/Portfolio/LandingPage.jsx';
+import NRoutes from "./Projects/NetflixClone/NRoutes.jsx";
 
 const App = () => {
   return (
     <div className='app'>
-      <LandingPage />
+      <NRoutes />
     </div>
   )
 }

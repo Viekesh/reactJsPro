@@ -1,0 +1,65 @@
+.banner {
+    margin: 9vh 0 auto;
+    width: 100vw;
+    height: 90vh;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/6e32b96a-d4be-4e44-a19b-1bd2d2279b51/ee068656-14b9-4821-89b4-53b4937d9f1c/IN-en-20220516-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.banner_contents {
+    height: 60%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header_title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner_description {
+    text-align: center;
+    width: 90%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+    height: 80px;
+}
+
+.header_btn .play_btn,
+.list_btn {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 2vw 1vw;
+}
+
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+.banner_fadebottom {
+    width: 100vw;
+    height: 18vh;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (min-width: 760px) {
+    .banner {
+        height: 70vh;
+    }
+}

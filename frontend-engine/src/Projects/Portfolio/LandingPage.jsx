@@ -7,6 +7,7 @@ import Services from "./Components/Services/Services";
 import Testimonial from "./Components/Testimonials/Testimonial";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 
 const LandingPage = () => {
@@ -17,6 +18,7 @@ const LandingPage = () => {
             <About />
             <Experience />
             <Services />
+            <Portfolio />
             <Testimonial />
             <Contact />
             <Footer />

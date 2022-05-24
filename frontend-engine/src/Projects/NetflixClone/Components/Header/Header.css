@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 9vh;
+    background: black;
+    z-index: 1;
+    transition: all 0.5s ease-in;
+}
+
+.h_box {
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h_box .header_logo {
+    width: 24vw;
+    object-fit: contain;
+}
+
+.h_box .user_logo {
+    width: 30px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 760px) {
+    .h_box .header_logo {
+        width: 12vw;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    .h_box .header_logo {
+        width: 8vw;
+    }
+}
