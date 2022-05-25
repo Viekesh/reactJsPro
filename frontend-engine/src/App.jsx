@@ -1,10 +1,12 @@
 import React from 'react';
-import NRoutes from "./Projects/NetflixClone/NRoutes.jsx";
+import TCRoutes from './Projects/TeslaClone/TCRoutes';
+// import LandingPage from './Projects/FoodDeliveryApp2/LandingPage';
+// import FDRoutes from './Projects/FoodDeliveryApp/FDRoutes';
 
 const App = () => {
   return (
     <div className='app'>
-      <NRoutes />
+      <TCRoutes />
     </div>
   )
 }

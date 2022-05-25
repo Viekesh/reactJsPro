@@ -1,0 +1,37 @@
+body {
+    color: #171A20;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+}
+
+header>a {
+    color: inherit;
+}
+
+a>.logo {
+    height: 12px;
+    width: 100px;
+    color: inherit;
+}
+
+.desktop {
+    display: none;
+}
+
+@media screen and(min-width: 768px) {
+    .desktop {
+        display: initial;
+    }
+}
+
+header nav a {
+    padding: 5px 10px;
+}
+
+header nav.center {
+    text-align: center;
+}

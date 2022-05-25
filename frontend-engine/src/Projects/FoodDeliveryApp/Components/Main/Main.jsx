@@ -14,7 +14,7 @@ import DishMenus from './DishMenus';
 import RowMenuCard from './RowMenuCard';
 import SubMenuItems from './SubMenuItems';
 import DebitCard from './DebitCard';
-import CartItem from './CartItem';
+// import CartItem from './CartItem';
 import { useStateValue } from './StateProvider';
 
 
@@ -25,7 +25,7 @@ const Main = () => {
         Items.filter((element) => element.itemId === "buger01")
     );
 
-    const [{ cart }, dispatch] = useStateValue();
+    const [{ cart }] = useStateValue();
 
     useEffect(() => {
 
@@ -144,7 +144,7 @@ const Main = () => {
 
                                 <div className="cart-container">
 
-                                    <div className="cart-items">
+                                    {/* <div className="cart-items">
                                         {
                                             cart && cart.map((data) => (
                                                 <CartItem
@@ -157,7 +157,7 @@ const Main = () => {
                                                 />
                                             ))
                                         }
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="total-section">
                                     <h3>Total</h3>
